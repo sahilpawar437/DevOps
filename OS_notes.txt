@@ -1,0 +1,52 @@
+OS:
+
+1. What is Os?
+--> Communicator between Hardware and Software
+
+2. a. Program= (Set of languages)--> 
+   b. Multiple Process= (When a program is loaded with memory and executed, it becomes a process, contains 
+      different  
+      PCB[Program Control Block, which contains info about it], two Process talk to each other with IPC[Inter Process  Communicator])-->
+   c. Multiple Thread= (Contains Instance of Process, which handles the Memory and Usage of Process, Resources)
+
+3. Various Process State:
+   a. New--> Ready(Schedule/Dispatch)--> Run--> 
+
+4. CPU Scheduling Algorithms:
+   a. FCFS= (First Come First Served)
+   b. SJN=  (Shortest Job Next)
+   c. SJF=  (Shortest Job First)
+   d. RR=   (Round Robin)
+   e. Priority Scheduling
+   f. Multi level Queue Scheduling
+
+5. Critical Section Problem: Where 2 Process should not interfere in specific part of a block(One process at a time)
+
+6. Process Synchronisation: Works like a traffic signal
+   a. Mutual Exclusion: Where one critical issue should be at a time in critical Section.
+   b. Progress: Atleast one process should go in Critical Section Problem.
+   c. Bounded Waiting: A process should have a range where, for how much time he should wait in waiting room.
+
+7. Process Synchronisation Mechanisms:
+   a. Locks/Mutexes: Where it shows where there is lock in specific block.
+   b. Semaphores: Counting Semaphores, signaling
+   c. Read-Write Lock: Multiple Read, and Write(Step 6)
+
+8. Deadlock: When Multiple Process comes together Deadlock may occur 
+   Necessary Conditions:
+   a. Mutual Exclusion
+   b. Hold and Wait
+   c. No Preemption
+   d. Circular Wait
+
+9. Deadlock Handling Techniques:
+   a. Deadlock Prevention: Avoid above ones
+   b. Deadlock Avoidance
+   c. Deadlock Detection: Checks after certain times
+   d. Deadlock Recovery: Technique to break above one Deadlock
+   e. Deadlock Ignorance
+
+10. Memory Management: RAM
+   a. Fixed Partitioning: Fixed RAM is allocted, but if the space is large and the object is small it creates a problem
+   b. Dynamic Partitioning: Give their space to it, but when the App is closed the space taken by the Object remains as it is and no other object can enter
+   c. 
