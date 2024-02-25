@@ -1,0 +1,6 @@
+OS.
+VIM Editor: If you don't have linux, install VIM on WSL(Windows Subsystem Linux) or VM.
+Linux Fundamentals
+
+
+

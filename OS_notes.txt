@@ -1,12 +1,12 @@
-OS:
+OS: 
+Link: https://www.youtube.com/watch?v=8XBtAjKwCm4&t=3508s
 
 1. What is Os?
 --> Communicator between Hardware and Software
 
 2. a. Program= (Set of languages)--> 
    b. Multiple Process= (When a program is loaded with memory and executed, it becomes a process, contains 
-      different  
-      PCB[Program Control Block, which contains info about it], two Process talk to each other with IPC[Inter Process  Communicator])-->
+      different "PCB"[Program Control Block, which contains info about it], two Process talk to each other with "IPC"[Inter Process  Communicator])-->
    c. Multiple Thread= (Contains Instance of Process, which handles the Memory and Usage of Process, Resources)
 
 3. Various Process State:
@@ -20,7 +20,8 @@ OS:
    e. Priority Scheduling
    f. Multi level Queue Scheduling
 
-5. Critical Section Problem: Where 2 Process should not interfere in specific part of a block(One process at a time)
+5. CPU's Critical Section Problem: Where 2 Process should not interfere in specific part of a block(One process at a
+   time)
 
 6. Process Synchronisation: Works like a traffic signal
    a. Mutual Exclusion: Where one critical issue should be at a time in critical Section.
@@ -34,13 +35,13 @@ OS:
 
 8. Deadlock: When Multiple Process comes together Deadlock may occur 
    Necessary Conditions:
-   a. Mutual Exclusion
+   a. Mutual Exclusion(6.a)
    b. Hold and Wait
    c. No Preemption
    d. Circular Wait
 
 9. Deadlock Handling Techniques:
-   a. Deadlock Prevention: Avoid above ones
+   a. Deadlock Prevention: Avoid above Necessary Conditions.
    b. Deadlock Avoidance
    c. Deadlock Detection: Checks after certain times
    d. Deadlock Recovery: Technique to break above one Deadlock
@@ -49,4 +50,29 @@ OS:
 10. Memory Management: RAM
    a. Fixed Partitioning: Fixed RAM is allocted, but if the space is large and the object is small it creates a problem
    b. Dynamic Partitioning: Give their space to it, but when the App is closed the space taken by the Object remains as it is and no other object can enter
-   c. 
+   
+11. Paging
+
+12. Virtual Memory: 
+
+13. Page Replacement Algorithms:
+   a. FIFO (Queue DS)
+   b. Optimal Page Replacement: Last page remove it, and first page keep it.
+   c. Least Recently Used
+
+14. Thrashing: Avoid degree of Multi Programming keep it optimal, when CPU utilization increases and reaches the 
+    optimal level after that it goes in Page Replacement Algorithm(13) and it keep on doing it and after some time it the CPU level becomes low and the Stage is called Thrashing.
+
+15. Segmentation: Divides the Page/Program into parts and after it loads together
+
+Above all are Primary Memory
+
+16. Secondary Memory: Disk Management
+
+17. Disk Scheduling Algorithm: 
+   a. FCFS= (First Come First Served)
+   b. SSTF= (Shortest Seek time First)
+   c. SCAN
+   d. CSCAN
+   e. LOOK
+   f. CLOOK
