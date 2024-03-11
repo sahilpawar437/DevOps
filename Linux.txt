@@ -1,0 +1,51 @@
+Terminal- is a graphical application where the default    shell will start.
+
+when we write a script in shell it sends it to kernel to execute
+
+Linux Structure
+a. Linux Terminal: Allows to access the system through a shell, A shell  is a program that takes commands from the User and gives them to the OS's Kernel to execute, Linux is case sensitive OS. 
+   It is a graphical application where default shell will run, 
+
+b. Shell application: Bash, Bourne, C Shell, Korn Shell, Z Shell
+
+c. Man Page(Manual Page): Help command
+
+d. Ctrl + l: clear screen
+e. Ctrl + D: Deletes the cmd prompt
+f. Ctrl + A: takes us to the begining of the line
+g. Ctrl + e: Takes us to the end
+h. Ctrl + u: deletes words before the cursor
+i. Ctrl + Z: Stops the process, and we can rerun it by(bg %1)
+j. Ctrl + c: Stops the process, not resumable
+k. Ctrl + r: in it we can search old command, (Question: How to not save the command in history?)
+l: Ctrl + g: to undo (k) step
+
+k. cat .bash_history: shows the history of the commands, "HISTFILESIZE" controls the history, saves 2000 file(echo $HISTFILESIZE)
+m. Root user is at the top, can install software and manage users and not to do simple task, like browsing a web and etc..., whereas NON-privileged users: have no such access 
+   (sudo su) which takes us to the root and pwd we can see it
+
+n: File System:
+   a. df -h: shows the mounted usb driver 
+   b. cat: /var/log/auth.log: prints context of file
+
+o. absolute and relative path (Q):
+   a. what is the difference between: /var/log--> then came back again to normal cmd, but their was a back slash present before the $(/$), so I did (cd ~), So before cd ~ was it in root location?
+   b. relative path contains "/" in begining, absolute path we need to add all the path
+
+p. ls command:
+   a. ls -l:  long listing
+   b. ls -lS: displays ascending order according to size
+   c. ls --hide=*conf /etc: hides the context which contains "conf"
+   d. ls -la: shows hidden files
+
+   e. ls -lt: to see modification time 
+   f. ls -lu: to see access time
+   g. ls -lc: to see change time
+   h. touch file.txt: creating an empty file if it does not exist, update the timestamps if the file exists
+   i. touch -a file: changing only the access time to current time
+
+q: If we don't have any access to read/write in file, then use "sudo"
+
+
+
+
